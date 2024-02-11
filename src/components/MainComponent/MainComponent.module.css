@@ -1,0 +1,247 @@
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+.facilities {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 15px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.facilities .left,
+.facilities .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--bg);
+  width: 100%;
+  padding: 20px 25px;
+  border-radius: 10px;
+  position: relative;
+}
+.facilities .left .verticleArrow,
+.facilities .right .verticleArrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 8px));
+  z-index: 1;
+}
+.facilities .left .title,
+.facilities .right .title {
+  color: var(--color);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.container {
+  border: var(--border);
+  background: var(--bg);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+}
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: var(--bg);
+  width: 100%;
+  padding: 15px 30px;
+  border: var(--border);
+  border-radius: 10px;
+}
+.mainDiv .title {
+  color: var(--color);
+
+  text-align: center;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.stepContainer {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.start {
+  background: var(--bg);
+  width: 102px;
+  border-radius: 15px;
+  min-height: 51px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start .text {
+  color: var(--color);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.curveLine {
+  height: 155px;
+}
+.otherSteps {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.statusOptionOutcome,
+.status2Proces1Process2 {
+  --space: 120px;
+  display: flex;
+  align-items: center;
+  gap: 50px var(--space);
+  width: 100%;
+}
+.status2Proces1Process2 {
+  margin-left: 5px;
+}
+
+.status1,
+.status2,
+.option,
+.process1,
+.process2,
+.outcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  min-height: 51px;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+}
+.stepContainer .text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.status1 {
+  background: var(--bg);
+  border-radius: 0;
+  position: relative;
+}
+.arrowright {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translate(calc(100%), -50%);
+  padding: 0 5px;
+}
+
+.status1 .text {
+  color: var(--color);
+}
+.status2 {
+  background: var(--bg);
+  border-radius: 0;
+}
+.status2 .text {
+  color: var(--color);
+}
+.option .arrowright {
+  width: 95%;
+  transform: translate(calc(100% + 15px), -50%);
+}
+.option .arrowDown {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, calc(100%));
+  padding: 0 5px;
+
+  height: 50px;
+}
+.process1 {
+  background: var(--bg);
+}
+.process1 .arrowright {
+  transform: translate(calc(100% + 6px), -50%);
+}
+.process1 .text {
+  color: var(--color);
+}
+
+.outcome {
+  background: var(--bg);
+  width: 102px;
+  border-radius: 0;
+}
+.outcome .text {
+  color: var(--color);
+}
+.process2 {
+  background: var(--bg);
+}
+.process2 .text {
+  color: var(--color);
+}
+.process2 .arrowUp {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, calc(-100% + -10px));
+  padding: 0 5px;
+  height: 68px;
+}
+.dataSecurity {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  gap: 8px;
+  background: var(--bg);
+  box-shadow: var(--boxShadow);
+  padding: 13px 30px;
+  border-radius: 50px;
+}
+.dataSecurity .icon {
+}
+
+.dataSecurity .title {
+  color: var(--color);
+  text-align: center;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
