@@ -61,7 +61,9 @@ function App() {
       },
       status2: { text: "Status", color: "#fff", bg: "#0B3599" },
       option: {
-        icon: <Option color="#101828" bg="#FFC700" />,
+        icon: (
+          <Option color="#101828" bg="#FFC700" text="Option" textColor="#000" />
+        ),
         arrow: <ArrowRight color="#667085" />,
         arrowDown: <ArrowDown color="#667085" />,
         text: "Option",

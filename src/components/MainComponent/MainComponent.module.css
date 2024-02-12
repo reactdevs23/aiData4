@@ -141,15 +141,20 @@
   border-radius: 15px;
   position: relative;
 }
-.stepContainer .text {
+.stepContainer .text,
+.option {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-align: center;
 }
 .status1 {
   background: var(--bg);
   border-radius: 0;
   position: relative;
+}
+.status1 .text {
+  color: var(--color);
 }
 .arrowright {
   content: "";
@@ -161,14 +166,14 @@
   padding: 0 5px;
 }
 
-.status1 .text {
-  color: var(--color);
-}
 .status2 {
   background: var(--bg);
   border-radius: 0;
 }
 .status2 .text {
+  color: var(--color);
+}
+.option {
   color: var(--color);
 }
 .option .arrowright {
